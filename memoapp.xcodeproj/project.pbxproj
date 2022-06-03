@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		178DF539ABB3EF07BA49E52C /* Pods_memoapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2336BC4F4AB09AC66CCE8CB9 /* Pods_memoapp.framework */; };
 		F2AF7D562849BCF00067398F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF7D552849BCF00067398F /* AppDelegate.swift */; };
 		F2AF7D582849BCF00067398F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF7D572849BCF00067398F /* SceneDelegate.swift */; };
 		F2AF7D5A2849BCF00067398F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF7D592849BCF00067398F /* ViewController.swift */; };
 		F2AF7D5D2849BCF00067398F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AF7D5B2849BCF00067398F /* Main.storyboard */; };
 		F2AF7D5F2849BCF10067398F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2AF7D5E2849BCF10067398F /* Assets.xcassets */; };
 		F2AF7D622849BCF10067398F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AF7D602849BCF10067398F /* LaunchScreen.storyboard */; };
+		F2AF7D6A2849C7480067398F /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF7D692849C7480067398F /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D4F960AD32476DB5F87DA28 /* Pods-memoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoapp.release.xcconfig"; path = "Target Support Files/Pods-memoapp/Pods-memoapp.release.xcconfig"; sourceTree = "<group>"; };
+		2336BC4F4AB09AC66CCE8CB9 /* Pods_memoapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		727A97BFE20A129AAC5CE350 /* Pods-memoapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoapp.debug.xcconfig"; path = "Target Support Files/Pods-memoapp/Pods-memoapp.debug.xcconfig"; sourceTree = "<group>"; };
 		F2AF7D522849BCF00067398F /* memoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AF7D552849BCF00067398F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2AF7D572849BCF00067398F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		F2AF7D5E2849BCF10067398F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2AF7D612849BCF10067398F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2AF7D632849BCF10067398F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2AF7D692849C7480067398F /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178DF539ABB3EF07BA49E52C /* Pods_memoapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CAA8A9DE4D12DCC2F5E537E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				727A97BFE20A129AAC5CE350 /* Pods-memoapp.debug.xcconfig */,
+				0D4F960AD32476DB5F87DA28 /* Pods-memoapp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BE104D17913DD809E79DFB31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2336BC4F4AB09AC66CCE8CB9 /* Pods_memoapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2AF7D492849BCF00067398F = {
 			isa = PBXGroup;
 			children = (
 				F2AF7D542849BCF00067398F /* memoapp */,
 				F2AF7D532849BCF00067398F /* Products */,
+				5CAA8A9DE4D12DCC2F5E537E /* Pods */,
+				BE104D17913DD809E79DFB31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +87,7 @@
 				F2AF7D572849BCF00067398F /* SceneDelegate.swift */,
 				F2AF7D592849BCF00067398F /* ViewController.swift */,
 				F2AF7D5B2849BCF00067398F /* Main.storyboard */,
+				F2AF7D692849C7480067398F /* InputViewController.swift */,
 				F2AF7D5E2849BCF10067398F /* Assets.xcassets */,
 				F2AF7D602849BCF10067398F /* LaunchScreen.storyboard */,
 				F2AF7D632849BCF10067398F /* Info.plist */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2AF7D662849BCF10067398F /* Build configuration list for PBXNativeTarget "memoapp" */;
 			buildPhases = (
+				D528BBE3DA85DAC38626EC33 /* [CP] Check Pods Manifest.lock */,
 				F2AF7D4E2849BCF00067398F /* Sources */,
 				F2AF7D4F2849BCF00067398F /* Frameworks */,
 				F2AF7D502849BCF00067398F /* Resources */,
+				EF1C69EE64EF46428863750E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D528BBE3DA85DAC38626EC33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memoapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF1C69EE64EF46428863750E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memoapp/Pods-memoapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memoapp/Pods-memoapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memoapp/Pods-memoapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2AF7D4E2849BCF00067398F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +213,7 @@
 				F2AF7D5A2849BCF00067398F /* ViewController.swift in Sources */,
 				F2AF7D562849BCF00067398F /* AppDelegate.swift in Sources */,
 				F2AF7D582849BCF00067398F /* SceneDelegate.swift in Sources */,
+				F2AF7D6A2849C7480067398F /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +357,7 @@
 		};
 		F2AF7D672849BCF10067398F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727A97BFE20A129AAC5CE350 /* Pods-memoapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,11 +366,12 @@
 				DEVELOPMENT_TEAM = JPLYLGPPL6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = memoapp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +381,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F2AF7D682849BCF10067398F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D4F960AD32476DB5F87DA28 /* Pods-memoapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,11 +396,12 @@
 				DEVELOPMENT_TEAM = JPLYLGPPL6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = memoapp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +411,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
